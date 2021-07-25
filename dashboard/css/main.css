@@ -1,0 +1,72 @@
+@media screen and (max-width: 993px) {
+  .user_container {
+    position: absolute;
+    width: 300px;
+    min-width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -295px;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+  }
+  .user_container .toggle {
+    cursor: pointer;
+    display: block !important;
+    position: absolute;
+    right: -30px;
+    top: 10px;
+    z-index: 0;
+    font-size: 3rem;
+    color: #686868;
+  }
+}
+
+.user_container.shows {
+  left: 0;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.user_container {
+  width: 300px;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #e0e7ff;
+  scrollbar-width: thin;
+  scrollbar-color: #a5b4fc #c4b5fd;
+}
+
+.user_container .toggle {
+  display: none;
+}
+.user_container .toggle i {
+  color: #818cf8;
+}
+.users {
+  z-index: 1;
+  width: 100%;
+  overflow: auto;
+}
+
+.users .user {
+  background: #eef2ff;
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
+.users .user p {
+  padding: 1rem;
+  text-align: center;
+}
